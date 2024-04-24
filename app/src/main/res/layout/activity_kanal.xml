@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KanalActivity">
+
+    <LinearLayout
+        android:id="@+id/harfSabitiOlmayan_linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/onlineUsers_verticalLayout"
+        app:layout_constraintEnd_toStartOf="@+id/harfSabitiOlan_linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="HARF SABİTİ OLMAYAN KANALLAR" />
+
+        <Button
+            android:id="@+id/harfSabitiOlmayan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KANAL1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/harfSabitiOlan_linearLayout"
+        android:layout_width="182dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/onlineUsers_verticalLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/harfSabitiOlmayan_linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="HARF SABİTİ OLAN KANALLAR" />
+
+        <Button
+            android:id="@+id/harfSabitiOlan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KANAL1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/onlineUsers_verticalLayout"
+        android:layout_width="364dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/receiver_username_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harfSabitiOlmayan_linearLayout" />
+
+    <Button
+        android:id="@+id/send_request_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="9dp"
+        android:text="Send"
+        app:layout_constraintBottom_toTopOf="@+id/acceptRequest_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/receiver_username_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/onlineUsers_verticalLayout" />
+
+    <Button
+        android:id="@+id/acceptRequest_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:text="Accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/send_request_button"
+        app:layout_constraintStart_toStartOf="@+id/send_request_button"
+        app:layout_constraintTop_toBottomOf="@+id/send_request_button" />
+
+    <EditText
+        android:id="@+id/receiver_username_edit_text"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_request_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onlineUsers_verticalLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

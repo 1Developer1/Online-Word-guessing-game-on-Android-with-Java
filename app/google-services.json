@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1059072477050",
+    "project_id": "kelimeapp-ed6c9",
+    "storage_bucket": "kelimeapp-ed6c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059072477050:android:4c831778572c345f9b38c3",
+        "android_client_info": {
+          "package_name": "com.serkan.kelimeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHjDYXuyAUbV5eQx8JN3ZdlPX0HS7ZlpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
